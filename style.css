@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;0,900;1,400');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;0,900;1,400');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;0,900;1,400');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;0,900;1,400');
+
+.font-barlow         { font-family: "barlow"; }
+.font-ibm-plex-sans  { font-family: "ibm plex sans"; }
+.font-libre-franklin { font-family: "libre franklin"; }
+.font-montserrat     { font-family: "montserrat"; }
+.font-roboto         { font-family: "roboto"; }
+.font-work-sans      { font-family: "work sans"; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.options {
+  margin-bottom: 80px;
+  padding: 8px;
+  width: 100%;
+  background-color: lightgray;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.options select {
+  min-width: 140px;
+  padding: 4px;
+  border: 2px solid black;
+  font-size: 16px;
+}
+
+.options label + select {
+  margin-right: 32px;
+}
+
+.options label {
+  margin-right: 8px;
+}
+
+section {
+  margin: 24px;
+}
