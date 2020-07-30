@@ -17,14 +17,47 @@ body {
   padding: 0;
   font-family: sans-serif;
   color: #111111;
+  line-height: 150%;
 }
 
 h1 {
   font-size: 36px;
 }
 
+section {
+  padding: 48px;
+  overflow: auto;
+}
+
+.section-bg {
+  background-color: #eeeeee;
+}
+
+.section-img {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.section-img img {
+  width: 100vw;
+}
+
+.logo {
+  float: left;
+  margin-right: 48px;
+}
+
+section:first-of-type {
+  padding-top: 12px;
+}
+
+.logo {
+  width: 400px;
+}
+
 .options {
-  margin-bottom: 80px;
+  margin-bottom: 24px;
   padding: 8px;
   width: 100%;
   background-color: lightgray;
@@ -48,15 +81,10 @@ h1 {
   margin-right: 8px;
 }
 
-section {
-  margin: 24px;
-}
-
 .face {
   display: inline-block;
   height: 300px;
   width: 200px;
-  border: 1px solid black;
   margin: 20px;
 }
 

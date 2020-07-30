@@ -1,24 +1,27 @@
-function updateHeadingFont(className) {
-  const els = Array.from(document.getElementsByTagName("h1"))
+/**
+ * For each element having class `targetClass`, removes classes beginning with
+ * "font-" and adds the given `fontClassName`.
+ *
+ */
+function updateFonts(targetClass, fontClassName) {
+  const els = Array.from(document.getElementsByClassName(targetClass))
   els.forEach(el => {
-    el.className = className
-  })
-}
-
-function updateBodyFont(className) {
-  const els = Array.from(document.getElementsByTagName("p"))
-  els.forEach(el => {
-    el.className = className
+    el.classList.forEach(c => {
+      if (c.startsWith("font-"))
+        el.classList.remove(c)
+    })
+    el.classList.add(fontClassName)
   })
 }
 
 document.getElementById("select-heading-font").onchange = event => {
-  updateHeadingFont(event.target.value)
+  updateFonts("has-heading-font", event.target.value)
 }
 
 document.getElementById("select-body-font").onchange = event => {
-  updateBodyFont(event.target.value)
+  updateFonts("has-body-font", event.target.value)
 }
 
-updateBodyFont("font-barlow")
-updateHeadingFont("font-barlow")
+//# initialize
+updateFonts("has-heading-font", "font-barlow")
+updateFonts("has-body-font", "font-barlow")
